@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DesarrolloRJCS</title>
+    <title>%Glovo</title>
     <link rel="stylesheet" href="index.css">
-
     <link rel="stylesheet" href="nosotros.css">
-
 </head>
 <body>
   
@@ -18,40 +16,27 @@
         <h2 class="titulo-footer">Calculo de porcentaje</h2>
         <h3 class="subtitulo-footer">suma total para resultado de pago en la quincena en Glovo</h3>
         <div class="footer">
-
+    <form id="myForm">
           <input type="text" id="totalRealizado" placeholder="Total Realizado" name="user_name" />
           <br> 
-        <label for="">Porcentaje: </label> <input type="button" value="">
+          <input type="text" id="porcentaj" placeholder="Porcentaje" name="user_name" />
         <br>
-          
-<br>
-    <input type="text" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="user_name" />
-    <br>
-    <input type="text" id="efectivoTomado" placeholder="Efectivo Tomado" name="user_name" />
-    <br>
-    <input type="text" id="otrosC" placeholder="Otros" name="user_name" />
-    <br>
-    <input type="submit" value="Limpiar">
-    <input type="submit" value="Calcular">
-    <br>
-<br>
-    <input type="text" id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="user_name" />   
-
-          </div>
+        <input type="text" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="user_name" />
+        <br>
+        <input type="text" id="efectivoTomado" placeholder="Efectivo Tomado" name="user_name" />
+        <br>
+        <input type="text" id="otrosC" placeholder="Otros" name="user_name" />
+        <br>
+        <input type="submit" onclick="myFunction()" value="Limpiar">
+        <input type="submit" value="Calcular">
+        <br>
+        <br>
+        <input id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="user_name" />   
+    
+              </div>
       </div>
   </div>
-
-  <div class="container-redes" id="redes">
-    <a href="https://api.whatsapp.com/send?phone=34722548896&text=¿Como son los servicios que ofreces?" target="_blank">
-        <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
-    </a>
-    <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
-      <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
-    </a> -->
-  </div>
-
-            
-
+</form>
        <!-- Footer--pide de pagina -->
        <div id="redessociales" class="container-footer">
                 
@@ -64,14 +49,18 @@
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
-
             <hr>
-
-            <h4>© 2024 Todos los derechos reservados Ronald Jesus Contreras Spinelli- <a href="#">Desarrollador<i class="fas fa-feather-alt"></i></a></h4>
+            <h4>© 2024 Todos los derechos reservados Ronald Spinelli- <a href="#">crservices.soporte@gmail.com<i class="fas fa-feather-alt"></i></a></h4>
             
-
         </footer>
-
     </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+        </script>
+
+
 </body>
 </html>
