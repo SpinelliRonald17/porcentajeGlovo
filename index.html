@@ -8,6 +8,7 @@
     <title>%Glovo</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nosotros.css">
+    <script src="js/limpiar.js"></script>
 </head>
 <body>
   
@@ -17,17 +18,17 @@
         <h3 class="subtitulo-footer">suma total para resultado de pago en la quincena en Glovo</h3>
         <div class="footer">
     <form id="myForm">
-          <input type="text" id="totalRealizado" placeholder="Total Realizado" name="user_name" />
+          <input type="text" id="totalRealizado" placeholder="Total Realizado" name="" onKeyPress="return soloNumeros(event)"/> 
           <br> 
-          <input type="text" id="porcentaj" placeholder="Porcentaje" name="user_name" />
+          <input type="text" id="porcentaj" placeholder="Porcentaje" name="" onKeyPress="return soloNumeros(event)"/> 
         <br>
-        <input type="text" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="user_name" />
+        <input type="text" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="" onKeyPress="return soloNumeros(event)"/> 
         <br>
-        <input type="text" id="efectivoTomado" placeholder="Efectivo Tomado" name="user_name" />
+        <input type="text" id="efectivoTomado" placeholder="Efectivo Tomado" name="" onKeyPress="return soloNumeros(event)"/> 
         <br>
-        <input type="text" id="otrosC" placeholder="Otros" name="user_name" />
+        <input type="text" id="otrosC" placeholder="Otros" name="" onKeyPress="return soloNumeros(event)"/> 
         <br>
-        <input id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="user_name" />   
+        <input id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="" onKeyPress="return soloNumeros(event)"/>   
         <br>
         <input type="submit" onclick="myFunction()" value="Limpiar">
         <input type="submit" value="Calcular">    
@@ -52,13 +53,6 @@
             
         </footer>
     </div>
-
-    <script>
-        function myFunction() {
-            document.getElementById("myForm").reset();
-        }
-        </script>
-
 
 </body>
 </html>
