@@ -348,6 +348,19 @@ header .boton:hover{
     margin: auto;
 }
 
+footer input[type="number"],
+.footer input[type="number"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background:  #2a3b73;
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
+}
+
 .footer input[type="text"],
 .footer input[type="email"] {
     display: inline-block;

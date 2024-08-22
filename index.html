@@ -18,18 +18,17 @@
         <h3 class="subtitulo-footer">suma total para resultado de pago en la quincena en Glovo</h3>
         <div class="footer">
     <form id="myForm">
-          <input type="text" id="totalRealizado" placeholder="Total Realizado" name="" onKeyPress="return soloNumeros(event)"/> 
-          <br> 
-          <input type="text" id="porcentaj" placeholder="Porcentaje" name="" onKeyPress="return soloNumeros(event)"/> 
-        <br>
-        <input type="text" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="" onKeyPress="return soloNumeros(event)"/> 
-        <br>
-        <input type="text" id="efectivoTomado" placeholder="Efectivo Tomado" name="" onKeyPress="return soloNumeros(event)"/> 
-        <br>
-        <input type="text" id="otrosC" placeholder="Otros" name="" onKeyPress="return soloNumeros(event)"/> 
-        <br>
-        <input id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="" onKeyPress="return soloNumeros(event)"/>   
-        <br>
+          <input type="number" id="totalRealizado" placeholder="Total Realizado" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+          
+          <input type="number" id="porcentaj" placeholder="Porcentaje" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+        <input type="number" id="ajusteGlovo" placeholder="Ajustes de Glovo" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+
+        <input type="number" id="efectivoTomado" placeholder="Efectivo Tomado" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+    
+        <input type="number" id="otrosC" placeholder="Otros" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+    
+        <input id="totalPagar" disabled type="text" placeholder="Total a Pagar" name="" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" />
+    
         <input type="submit" onclick="myFunction()" value="Limpiar">
         <input type="submit" value="Calcular">    
               </div>
@@ -45,7 +44,7 @@
                 <img src="img/developer1.png" alt="">
                 <div class="hover-galeria">
                     <img src="img/icono1.png" alt="">
-                    <p>Nuestro trabajo</p>
+
                 </div>
             </div>
             <hr>

@@ -3,7 +3,6 @@ function myFunction() {
 }
 
 
-function soloNumeros(e){
-    var key = window.Event ? e.which : e.keyCode
-    return (key >= 48 && key <= 57)
+function setTwoNumberDecimal(event) {
+    this.value = parseFloat(this.value).toFixed(2);
 }
