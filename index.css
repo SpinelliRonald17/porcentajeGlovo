@@ -25,6 +25,7 @@ form {
     text-align: right;
   }
   
+  
   input,
   textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
@@ -52,6 +53,7 @@ form {
     /* Proporcionar espacio para escribir texto */
     height: 5em;
   }
+
   
   .button {
     /* Alinear los botones con los campos de texto */
@@ -212,284 +214,7 @@ main .sobre-nosotros{
     text-align: justify;
 }
 
-/* Galeria */
 
-
-.portafolio{
-    background: #f2f2f2;
-}
-
-.portafolio .contenedor .container-cover #carouselExampleIndicators ol li{
-   background-color: #2a3b73;
-   border-radius: 50%;
-  
-}
-
-.portafolio .contenedor .container-cover #carouselExampleIndicators span{
-    background-color: #2a3b73;
-    border-radius: 30%;
- }
-
-
-
-.galeria-port{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-port{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-port > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: rgba(6, 8, 132, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
-}
-
-/* Clients */
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-  
-}
-
-.cards .card{
-    background:  #2a3b73;
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-    margin-bottom: 50px;
-}
-
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-
-/*  Our team */
-
-.about-services{
-    background: #f2f2f2;
-    padding-bottom: 30px;
-}
-
-
-.servicio-cont{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.servicio-ind{
-    width: 28%;
-    text-align: center;
-}
-
-.servicio-ind img{
-    width: 90%;
-}
-
-.servicio-ind h3{
-    margin: 10px 0;
-}
-
-.servicio-ind p{
-    font-weight: 300;
-    text-align: justify;
-}
-
-
-
-
-/* btn ir arriba */
-
-#button-up{
-    width: 50px;
-    height: 50px;
-    background: #25D366;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 50%;
-    font-size: 20px;
-    position: fixed;
-    bottom: 88px;
-    right: 20px;
-    cursor: pointer;
-    border: 4px solid #25D366;
-    transition:all 300ms ease ;
-    transform: scale(0);
-}
-
-#button-up i{
-    background: #25D366;
-}
-
-#button-up:hover{
-    transform: scale(1.1);
-    border-color:#33af3e;
-    opacity: 0.8;
-}
-
-/* iconos de redes sociales flotantes */
-
-.container-redes{
-    position: fixed;
-    bottom: 84px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: transparent;
-    z-index: 1;
-}
-
-.container-redes a{
-    margin-top: 4px;
-}
-
-.container-redes img{
-    width: 60px;
-    padding: 4px;
-    background: transparent;
-    cursor: pointer;
-    border-radius: 100%;
-    transition: all 300ms;
-    text-decoration: none;
-}
-
-.container-redes a:hover img{
-    background: #33af3e;
-    opacity: 0.8;
-}
-
-
-.ubicacion{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
-    border-radius: 6px;
-    box-shadow: -10px 0 30px -20px rgb(255, 253, 253);
-}
-
-
-/* enviar */
-
-.contact-form {
-    padding: 55px 65px;
-    background: #afabab;
-    min-height: 600px;
-    margin-top: 60px;
-}
-
-.contact-form form input {
-    width: 100%;
-    background: #fff;
-    border: none;
-    height: 60px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    margin: 15px 0;
-}
-
-.contact-form form textarea {
-    width: 100%;
-    background: #fff;
-    border: none;
-    min-height: 120px;
-    padding: 15px 20px;
-    text-transform: uppercase;
-    margin: 15px 0;
-}
-
-.contact-form form input[type="submit"] {
-    background: #2a3b73;;
-    color: white;
-    border-radius: 8px;
-    width: 190px;
-    margin: 15px auto 0;
-    font-size: 19px;
-    font-weight: 300;
-    float: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.contact-form form input[type="submit"]:hover,
-.contact-form form input[type="submit"]:focus {
-    background: rgba(57, 206, 82, 0.527);
-    color: #fff;
-    transition: ease all 0.5s;
-}
-
-.container h3{
-    text-align: center;
-    color:  white;
-}
-
-.container {
-    background: #2a3b73;
-}
-    
 
 /* Footer - pie de pagina */
 
@@ -498,7 +223,7 @@ main .sobre-nosotros{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background-color: #2a3b73;
+    background-color: #66ec93;
     margin-top: 40px;
 }
 
