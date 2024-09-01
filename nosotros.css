@@ -396,19 +396,35 @@ footer input[type="number"],
     margin-bottom: 16px;
 }
 
+.footer input[type="button"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: black;
+    background:  #33af3e;
+    border-radius: 8px;
+    width: 96px;
+}
+
+.footer input[type="button"]:hover{
+    background: #2a3b73;
+    color: #fff;
+    cursor: pointer;
+}
+
 .footer input[type="submit"] {
     display: inline-block;
     padding: 13px;
     border: none;
-    color: #fff;
-    background: #2a3b73;
+    color: black;
+    background:  #33af3e;
     border-radius: 8px;
     width: 96px;
 }
 
 .footer input[type="submit"]:hover{
-    background:  #33af3e;
-    color: black;
+    background: #2a3b73;
+    color: #fff;
     cursor: pointer;
 }
 /* btn ir arriba */

@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>%Glovo</title>
+    <script src="js/limpiar.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nosotros.css">
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script src="js/limpiar.js"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
+
+      <!-- Alertas mensajes -->
+      <script src="sweetalert2.all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    
 </head>
 <body>
   
@@ -26,8 +33,9 @@
             <input type="number" id="num3" placeholder="Efectivo Tomado"/>
             <input type="number" id="num4" placeholder="Otros" />
 
-            <input type="submit" onclick="percentage_1()" placeholder="Calcular" />
-            <input type="number" id="rsuma" placeholder="Total a Pagar" readonly />
+            <input type="button" onclick="percentage_1()" value="Calcular" />
+            <input type="button" onclick="limp()" value="Limpiar" />
+            <!--<input type="number" id="rsuma" placeholder="Total a Pagar" readonly />-->
 
         </div>
     </div>
