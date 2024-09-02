@@ -49,7 +49,6 @@ Swal.fire({
   doc.text(20,70,'Otros ajustes: ' + mensaje4 + '€');
   doc.text(20,80,'Total a pagar: ' + totalRealizado + '€');
   doc.addPage();
-  doc.text(20,20,'Mi trabajo!!');
   doc.save('certificadoPdf.pdf');
     //genPDF();
     Swal.fire("Descargando PDF", "", "info");
