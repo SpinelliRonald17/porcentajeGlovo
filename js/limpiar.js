@@ -110,7 +110,6 @@ function genPDF(){
   doc.text(20,70,'Otros ajustes: ' + mensaje4 + '€');
   doc.text(20,80,'Otros ajustes: ' + totalRealizado + '€');
   doc.addPage();
-  doc.text(20,20,'Mi trabajo!!');
   doc.save('certificadoPdf.pdf');
 }
 
