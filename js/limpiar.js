@@ -53,6 +53,8 @@ Swal.fire({
   doc.save('certificadoPdf.pdf');
     //genPDF();
     Swal.fire("Descargando PDF", "", "info");
+
+    myForm.reset();
   }
 });
 
